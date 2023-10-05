@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: cyan;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #one {
+            width: 450px;
+            height: 350px;
+            border: 1px solid black;
+            box-shadow: 0 0 10px black;
+            margin: 150px auto;
+            position: relative;
+            overflow: hidden;
+            filter: grayscale();
+        }
+
+        #one > img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #one:hover {
+            cursor: pointer;
+            filter: brightness();
+
+        }
+
+        #two {
+            width: 450px;
+            height: 350px;
+            background-color: rgba(240, 240, 240,0.3) ;
+            border: 1px solid black;
+            position: absolute;
+            top: 0;
+            transition: all 1s linear 0s;
+            text-align: center;
+        }
+
+        #two:hover {
+            transform: translatex(450px);
+        }
+        #one > #two > h1 {
+            text-align: center;
+            color: rgb(245, 71, 7);
+        }
+
+        #one > #two > p {
+            text-align: justify;
+            color: black;
+        }
+        button {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="one">
+        <img src="balu1.jpg" alt="">
+        <div id="two">
+            <h1>Jai Balayaa</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptate molestiae eum veniam maxime asperiores provident laborum obcaecati ad eius deleniti dolorum quod sit aliquam, suscipit expedita repellat hic alias a officiis. Deserunt suscipit impedit corporis mollitia libero, nesciunt autem laudantium minima vero, architecto quaerat molestiae minus ullam
+            </p>
+            <button>Watch Balu Movie</button>
+        </div>
+    </div>
+
+    
+</body>
+</html>
